@@ -1,0 +1,202 @@
+/* GENERAL STYLES */
+
+.html{
+  font-size: 16px;
+
+  }
+body{
+    font-family: helvetica;
+    color: #3f3844;
+}
+
+h1{
+  font-size: 2.9rem;
+  font-weight: bold;
+}
+
+h4{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+body a{
+      text-decoration:none;
+}
+
+strong{
+  font-weight: bold;
+}
+
+/* GENERAL ARTICLE STYLES */
+
+article{
+  width:60%;
+  padding: 2rem 1.5rem;
+}
+
+article img{
+  width: 100%;
+}
+
+/* GENERAL SIDEBAR STYLES */
+
+aside{
+  width:40%;
+}
+
+.stacked{
+  padding-top: 1rem;
+  border-left: 1px solid lightgray;
+}
+
+.stack-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.stack-container:hover{
+  background-color: lightgray;
+}
+
+.stack-text{
+  width: 65%;
+}
+
+.stack-container img{
+  width:35%;
+  height: auto;
+  display: block;
+  padding: 1rem;
+}
+
+.stack-container a{
+  color:dodgerblue;
+}
+
+.stack-container a,.stack-container p, .stack-container h4{
+  padding-bottom: 0.5rem;
+}
+
+
+/* HEADER */
+
+header{
+  height:4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 3rem;
+  width: auto;
+}
+
+.logo span{
+  font-size: 2rem;
+}
+
+span.academy{
+  color:lightgray;
+}
+
+nav{
+  display: block;
+  padding-right: 1.5rem;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+}
+
+nav li{
+  display: block;
+  padding-left: 1rem;
+}
+
+/* START SECTION */
+#start-section{
+  background-color: lightgray;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.start-aside{
+  display: flex;
+  align-items: center;
+      text-decoration:none;
+}
+
+.start-content h1, .start-content h4{
+    padding-bottom: 1.5rem;
+}
+
+.button{
+  background-color: #3f3844;
+  padding: 0.5rem;
+  width: 90%;
+  color: white;
+  text-align: center;
+}
+
+/* ABOUT SECTION */
+#about-section{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-article h1{
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.about-aside{
+
+}
+
+/* COURSES SECTION */
+
+#courses-section{
+  background-color: lightgray;
+  padding: 2rem 9rem;
+}
+
+#courses-section h1{
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.courses-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course-container{
+  margin: 0 2rem 2rem 0;
+  width: 30%;
+  background-color: white;
+}
+
+.course-container img{
+  height:auto;
+  width: 100%;
+}
+
+.course-container p{
+  padding-top: 0.5rem;
+    color: gray;
+}
+
+.course-text{
+  padding: 1rem 1rem 1.5rem 1rem;
+}
