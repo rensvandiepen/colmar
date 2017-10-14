@@ -34,7 +34,7 @@ article{
   padding: 2rem 1.5rem;
 }
 
-article img{
+article img, article video{
   width: 100%;
 }
 
@@ -46,14 +46,14 @@ aside{
 
 .stacked{
   padding-top: 1rem;
-  border-left: 1px solid lightgray;
+
 }
 
 .stack-container{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-bottom: 1px solid lightgray;
+
 }
 
 .stack-container:hover{
@@ -159,8 +159,12 @@ nav li{
   padding-bottom: 1.5rem;
 }
 
-.about-aside{
+.about-stacked {
+  border-left: 1px solid lightgray;
+}
 
+.about-container{
+  border-bottom: 1px solid lightgray;
 }
 
 /* COURSES SECTION */
@@ -199,4 +203,40 @@ nav li{
 
 .course-text{
   padding: 1rem 1rem 1.5rem 1rem;
+}
+
+/* THESIS SECTION */
+
+.thesis-container{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.title-thesis h1{
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.thesis-article h1{
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.thesis-article p{
+  padding-bottom: 2rem;
+}
+
+/* FOOTER */
+
+footer{
+  border-top: solid 1px lightgray;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  color: gray;
+}
+
+footer a{
+  padding-left: 1rem;
+  color: gray;
 }
