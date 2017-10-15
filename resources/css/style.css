@@ -82,7 +82,7 @@ aside{
 
 /* HEADER */
 
-header{
+header.desktop{
   height:4rem;
   display: flex;
   align-items: center;
@@ -108,7 +108,7 @@ span.academy{
   color:lightgray;
 }
 
-nav{
+header.desktop nav{
   display: block;
   padding-right: 1.5rem;
 }
@@ -118,9 +118,13 @@ nav ul{
   flex-direction: row;
 }
 
-nav li{
+header.desktop nav li{
   display: block;
   padding-left: 1rem;
+}
+
+header.mobile, img.mobile{
+  display: none;
 }
 
 /* START SECTION */
@@ -136,6 +140,10 @@ nav li{
       text-decoration:none;
 }
 
+.start-content{
+    max-width: 80%;
+}
+
 .start-content h1, .start-content h4{
     padding-bottom: 1.5rem;
 }
@@ -143,7 +151,6 @@ nav li{
 .button{
   background-color: #3f3844;
   padding: 0.5rem;
-  width: 90%;
   color: white;
   text-align: center;
 }
@@ -239,4 +246,119 @@ footer{
 footer a{
   padding-left: 1rem;
   color: gray;
+}
+
+/* MOBILE LAYOUT */
+
+@media screen and (max-width: 750px){
+
+  /* HIDDEN ON MOBILE ITEMS */
+  header.desktop, img.desktop, p.desktop, h1.desktop, footer span.desktop, .stacked-about, .about-article{
+    display: none;
+  }
+
+  /* MOBILE-ONLY ITEMS */
+  img.mobile{
+    display: block;
+  }
+
+  /* MOBILE HEADER */
+  header.mobile{
+    height:4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header.mobile nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header.mobile img{
+    height: 3rem;
+  }
+
+  /* MOBILE START SECTION */
+  #start-section{
+    flex-direction: column;
+  }
+
+  article, aside, .start-content{
+    width:100%;
+    padding: 0 0;
+  }
+
+  .button{
+    margin-bottom: 2rem;
+  }
+
+  .start-content{
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .start-content h1{
+    padding: 2rem 0;
+  }
+
+  /* MOBILE ABOUT SECTION */
+  .stack-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 1rem 4rem 1rem;
+  }
+
+  .stack-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .stack-text{
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  /* MOBILE COURSES SECTION */
+
+  #courses-section{
+    padding: 2rem 1rem;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+  }
+
+  #courses-section h1{
+    padding-bottom: 1rem;
+  }
+
+  .course-container{
+    width: 100%;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .course-text{
+    background-color: lightgray;
+  }
+
+  .course-text:hover{
+    background-color: darkgray;
+  }
+
+  /* MOBILE THESIS SECTION */
+  .title-thesis h1 {
+    padding: 2rem 0 1rem 0;
+  }
+
+  video{
+    padding-bottom: 1.5rem;
+  }
+
+  /* MOBILE FOOTER */
+  footer{
+    border: none;
+  }
+
 }

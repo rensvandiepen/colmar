@@ -8,19 +8,27 @@
   </head>
   <body>
 <!-- MENU BANNER -->
-    <header>
+    <header class="desktop">
       <div class="logo">
         <img src="./resources/images/ic-logo.svg" alt="">
         <span class="colmar">COLMAR</span>
         <span class="academy">ACADEMY</span>
       </div>
-      <nav class="menu">
+      <nav>
         <ul>
           <li>On campus</li>
           <li>Online</li>
           <li>Our companies</li>
           <li>Sign In</li>
         </ul>
+      </nav>
+    </header>
+    <header class="mobile">
+      <nav>
+        <a href="#"><img src="./resources/images/ic-logo.svg" alt=""></a>
+        <a href="#"><img src="./resources/images/ic-on-campus.svg" alt=""></a>
+        <a href="#"><img src="./resources/images/ic-online.svg" alt=""></a>
+        <a href="#"><img src="./resources/images/ic-login.svg" alt=""></a>
       </nav>
     </header>
 <!-- START SECTION -->
@@ -30,8 +38,8 @@
       </article>
       <aside class="start-aside">
         <div class="start-content">
-            <h1>Learn something <br>new every day</h1>
-            <h4>Lorem ipsum dolor sit amet, <br> consecteur adipiscing elit</h4>
+            <h1>Learn something new every day</h1>
+            <h4>Lorem ipsum dolor sit amet, consecteur adipiscing elit</h4>
             <a href="#">
               <div class="button">
                 Start here
@@ -51,7 +59,8 @@
       </article>
       <aside class="stacked about-stacked">
         <div class="stack-container about-container">
-          <img src="./resources/images/information-orientation.jpg" alt="">
+          <img src="./resources/images/information-orientation.jpg" class="desktop" alt="">
+          <img src="./resources/images/information-orientation-mobile.jpg" class="mobile" alt="">
           <div class="stack-text">
             <h4>Orientation date</h4>
             <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
@@ -59,7 +68,8 @@
           </div>
         </div>
         <div class="stack-container about-container">
-          <img src="./resources/images/information-campus.jpg" alt="">
+          <img src="./resources/images/information-campus.jpg" class="desktop" alt="">
+          <img src="./resources/images/information-campus-mobile.jpg" class="mobile" alt="">
           <div class="stack-text">
             <h4>Our Campus</h4>
             <p>Find which campus is close by you</p>
@@ -67,7 +77,8 @@
           </div>
         </div>
         <div class="stack-container about-container">
-          <img src="./resources/images/information-guest-lecture.jpg" alt="">
+          <img src="./resources/images/information-guest-lecture.jpg" class="desktop" alt="">
+          <img src="./resources/images/information-guest-lecture-mobile.jpg" class="mobile" alt="">
           <div class="stack-text">
             <h4>Our guest lecture</h4>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -80,51 +91,51 @@
       <h1>Start learning</h1>
       <div class="courses-grid">
         <div class="course-container">
-          <img src="./resources/images/course-software.jpg" alt="">
+          <img src="./resources/images/course-software.jpg" class="desktop" alt="">
           <div class="course-text">
             <h4>Software</h4>
-            <p>COURSES</p>
-            <p>Web Development, Mobile Development, iOT, APIs</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Web Development, Mobile Development, iOT, APIs</p>
           </div>
         </div>
         <div class="course-container">
-          <img src="./resources/images/course-computer-art.jpg" alt="">
+          <img src="./resources/images/course-computer-art.jpg" class="desktop" alt="">
           <div class="course-text">
             <h4>Computer art</h4>
-            <p>COURSES</p>
-            <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
           </div>
         </div>
         <div class="course-container">
-          <img src="./resources/images/course-design.jpg" alt="">
+          <img src="./resources/images/course-design.jpg" class="desktop" alt="">
           <div class="course-text">
             <h4>Design</h4>
-            <p>COURSES</p>
-            <p>User Experiences Design, User Research, Visual Design</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">User Experiences Design, User Research, Visual Design</p>
           </div>
         </div>
         <div class="course-container">
-          <img src="./resources/images/course-data.jpg" alt="">
+          <img src="./resources/images/course-data.jpg" class="desktop" alt="">
           <div class="course-text">
             <h4>Data</h4>
-            <p>COURSES</p>
-            <p>Data Science, Big Data, SQL, Data Visualization</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Data Science, Big Data, SQL, Data Visualization</p>
           </div>
         </div>
         <div class="course-container">
-          <img src="./resources/images/course-business.jpg" alt="">
+          <img src="./resources/images/course-business.jpg" class="desktop" alt="">
           <div class="course-text">
             <h4>Business</h4>
-            <p>COURSES</p>
-            <p>Product Development, Business Development, Startup</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Product Development, Business Development, Startup</p>
           </div>
         </div>
         <div class="course-container">
-          <img src="./resources/images/course-marketing.jpg" alt="">
+          <img src="./resources/images/course-marketing.jpg" class="desktop" alt="">
           <div class="course-text">
             <h4>Marketing</h4>
-            <p>COURSES</p>
-            <p>Analytics, Content Marketing, Mobile Marketing</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Analytics, Content Marketing, Mobile Marketing</p>
           </div>
         </div>
       </div>
@@ -137,10 +148,10 @@
       <div class="thesis-container">
         <article class="thesis-article">
           <video src="./resources/videos/thesis.mp4" autoplay poster="posterimage.jpg" controls></video>
-          <h1>Reimagine urban</h1>
-          <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligua.!"</p>
+          <h1 class="desktop">Reimagine urban</h1>
+          <p class="desktop">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligua.!"</p>
         </article>
-        <aside class="stacked">
+        <aside class="stacked stacked-about">
           <div class="stack-container">
             <img src="./resources/images/thesis-fisma.jpg" alt="">
             <div class="stack-text">
@@ -160,7 +171,7 @@
 <!-- FOOTER -->
     <footer>
       <span>&copy; Colmar Academy. All rights reserved.</span>
-      <span><a href="#">Terms</a><a href="#">Privacy</a></span>
+      <span class="desktop"><a href="#">Terms</a><a href="#">Privacy</a></span>
     </footer>
   </body>
 </html>
